@@ -34,7 +34,7 @@ jobs:
       - name: show terragrunt version
         run: terragrunt --version
   plan:
-    need: [version]
+    needs: [version]
     name: plan terragrunt
     runs-on: ubuntu-latest
     steps:
