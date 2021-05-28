@@ -1,6 +1,9 @@
 variable "location" {
   default ="undef"
 }
-variable "resource_group_name" {
+variable "kube_resource_group_name" {
+  default ="undef"
+}
+variable "vnet_resource_group_name" {
   default ="undef"
 }

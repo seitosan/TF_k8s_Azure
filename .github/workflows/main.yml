@@ -46,3 +46,11 @@ jobs:
           terragrunt_version: 0.29.6
       - name: plan terragrunt
         run: terragrunt run-all plan
+      - name: apply terragrunt
+        run: terragrunt run-all apply --terragrunt-non-interactive
+      - name: destroy terragrunt
+        run: terragrunt run-all destroy --terragrunt-non-interactive
+      # Destroy if failure
+      - name: Terraform Destroy
+        run: terragrunt run-all destroy --terragrunt-non-interactive
+        if: failure()
