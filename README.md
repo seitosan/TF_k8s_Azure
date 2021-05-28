@@ -8,11 +8,7 @@ The following diagram shows the implementation made in this repository:
 
 ![](docs/archi.png)
 
-## How to use :
-
-
-
 ## Requirement :
 
-> 
-> 
+> terragrunt version v0.29.6
+> Terraform v0.14.9
