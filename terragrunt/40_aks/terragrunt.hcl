@@ -38,5 +38,5 @@ inputs = {
   nodepool_vm_size         = "Standard_D2_v2"
   kubernetes_id            = dependency.networks_spoke.outputs.subnet_ids["aks-subnet"]
   admin_rbac_kubernetes    = ["3386a976-031a-451c-b645-7dcaeff5efd4"]
-  dns_private_zone         = "internals.technical.alside.cloud"
+  dns_private_zone         = "internals.nospof.cloud"
 }
