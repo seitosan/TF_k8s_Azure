@@ -4,8 +4,8 @@ include {
 
 inputs = {
   location                 = "westus"
-  kube_resource_group_name = "alsideaks"
-  vnet_resource_group_name = "alsideaksvnet"
+  kube_resource_group_name = "privateaks"
+  vnet_resource_group_name = "privateaksvnet"
 }
 
 terraform {
