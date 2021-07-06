@@ -70,7 +70,7 @@ resource "azurerm_kubernetes_cluster_node_pool" "windows" {
   kubernetes_cluster_id = azurerm_kubernetes_cluster.privateaks.id
   vm_size               = "Standard_DS2_v2"
   node_count            = 1
-
+  availability_zones    =  var.zones
   node_labels  ={workload-type="windows"}
   tags = {
     Environment = "Production"
